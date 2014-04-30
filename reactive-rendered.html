@@ -1,0 +1,17 @@
+<head>
+  <title>reactive-rendered</title>
+</head>
+
+<body>
+  {{> hello2}}
+</body>
+
+<template name="hello2">
+	{{> hello greeting=greeting}}
+</template>
+
+<template name="hello">
+	<div class="wrapper">
+		<h1>{{greeting}}</h1>
+	</div>
+</template>
